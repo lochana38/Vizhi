@@ -1,0 +1,15 @@
+# Python / backend
+api-monitoring-backend/venv/
+api-monitoring-backend/__pycache__/
+api-monitoring-backend/**/__pycache__/
+api-monitoring-backend/.env
+api-monitoring-backend/uploaded_files/
+
+# Node / frontend
+api-monitoring-frontend/node_modules/
+api-monitoring-frontend/dist/
+api-monitoring-frontend/.env
+
+# OS/editor noise
+.DS_Store
+*.pyc
