@@ -80,7 +80,19 @@ VizhiOps/
 - Node.js 18+
 - MySQL 8
 
-### 1. Backend
+### 1. Database Setup
+
+VizhiOps does not require any manual schema setup or migration tool. On first run, SQLAlchemy automatically creates every table from the backend's models, as long as the target database already exists (empty).
+
+Create an empty database in MySQL:
+
+```sql
+CREATE DATABASE vizhi;
+```
+
+That's it. Once the backend starts (Step 2 below), all tables (`endpoints`, `security_findings`, `data_leak_findings`, `usage_daily_summary`, `duplicate_groups`, `duplicate_group_members`, `bulk_uploads`, `settings`) are created automatically to match the current models. No manual `CREATE TABLE` statements are needed.
+
+### 2. Backend
 
 ```bash
 cd api-monitoring-backend
@@ -106,7 +118,7 @@ uvicorn app.main:app --reload
 
 API docs available at `http://127.0.0.1:8000/docs`.
 
-### 2. Frontend
+### 3. Frontend
 
 ```bash
 cd api-monitoring-frontend
@@ -116,7 +128,7 @@ npm run dev
 
 Runs at `http://localhost:5173`. Make sure CORS is enabled on the backend for this origin (see backend `main.py`).
 
-### 3. Demo Traffic App (optional)
+### 4. Demo Traffic App (optional)
 
 A separate, database-free app for generating realistic traffic to test the import pipeline.
 
