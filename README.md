@@ -4,7 +4,7 @@
 
 VizhiOps looks at the endpoints your application exposes, the traffic they get, and the problems hiding inside them, and turns all of that into a dashboard three kinds of people can actually use: developers, quality teams, and executives. It automatically detects security issues and duplicate endpoints on import, and uses an LLM to suggest the three most important things to do next, so nobody has to dig through logs to figure out where to start.
 
-Read the full story behind why this was built: *[link to your blog post here]*
+Read the full story behind why this was built: *https://lochanaragupathy.com/blogs/the-bug-that-passed-staging-and-broke-production/*
 
 ---
 
