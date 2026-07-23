@@ -6,6 +6,7 @@ const navItems = [
   { to: "/performance", label: "Performance" },
   { to: "/usage", label: "Usage" },
   { to: "/import", label: "Import Data" },
+  {to: "/logs",label: "Convert Log"}
 ];
 
 export default function Layout() {

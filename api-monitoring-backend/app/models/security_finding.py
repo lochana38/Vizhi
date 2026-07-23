@@ -2,6 +2,7 @@ import enum
 from sqlalchemy import Column, BigInteger, Boolean, Text, TIMESTAMP, Enum, ForeignKey
 from sqlalchemy.sql import func
 from app.database import Base
+from sqlalchemy.orm import relationship   
 
 
 class IssueTypeEnum(str, enum.Enum):
@@ -27,3 +28,4 @@ class SecurityFinding(Base):
     resolved = Column(Boolean, default=False)
     resolved_at = Column(TIMESTAMP, nullable=True)
     details = Column(Text, nullable=True)
+    endpoint = relationship("Endpoint") 

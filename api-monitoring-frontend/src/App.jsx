@@ -6,6 +6,7 @@ import PerformancePage from "./pages/PerformancePage";
 import UsagePage from "./pages/UsagePage";
 import ImportPage from "./pages/ImportPage";
 import DrilldownPage from "./pages/DrilldownPage";
+import LogConverterPage from "./pages/LogConverterPage"
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/performance" element={<PerformancePage />} />
           <Route path="/usage" element={<UsagePage />} />
           <Route path="/import" element={<ImportPage />} />
+          <Route path="/logs" element={<LogConverterPage />} />   {/* <-- this line */}
           <Route path="/endpoints/:endpointId" element={<DrilldownPage />} />
         </Route>
       </Routes>

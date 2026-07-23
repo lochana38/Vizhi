@@ -10,6 +10,13 @@ api-monitoring-frontend/node_modules/
 api-monitoring-frontend/dist/
 api-monitoring-frontend/.env
 
+
+# Demo traffic app
+demo_traffic_app/venv/
+demo_traffic_app/__pycache__/
+demo_traffic_app/**/__pycache__/
+
+
 # OS/editor noise
 .DS_Store
 *.pyc
